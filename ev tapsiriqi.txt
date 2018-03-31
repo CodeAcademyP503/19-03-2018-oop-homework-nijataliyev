@@ -1,0 +1,81 @@
+1. 
+for (int i=1; i < 10; i++)
+            {
+                if (i == 5)
+                {
+                    break (continue);
+                }
+                Console.WriteLine(i);
+            }
+//burada 5 reqemine kimi axtaris verecek ama continue olsaydi 5 reqemini qeyd 
+etmiyib 10 dan balaca reqemleri qeyd edecekdi.
+
+2.
+this classdan yaranan obyektin adi.
+this ifadesini mence static methodda isletmek olmaz cunki static methodlar mueyyen bir
+veziyyete aid deyil.staticler class yaratmadan da movcuddurlar.
+
+
+3.
+string keywordu System.String classnin aliasidi.
+string C#-da keyworddu ama String System.String classina aiddir.
+
+
+
+4.
+object class-nin metodlaridi.
+GetType - obyektin novunu qaytarir.
+Equals - Iki obyektin numun?l?rini muqayis? edir. Onlar b?rab?r olduqda, 
+?ks halda yalanc? olur.
+ToString - string novune konvert edir
+GetHashCode - esasli bir kolleksiyada bir obyektin daxil edilmesi ve mueyyen
+edilmesi ucun istifade olunan sayisal bir deyerdir.
+
+5.
+public - mence metod her kes terfinden elede edile bilen giris metodudur.
+static - mence static methodlar mueyyen bir
+veziyyete aid deyil.staticler class yaratmadan da movcuddurlar.
+ 
+
+6.
+Iki class arasinda irsen bir-birilerinden kodlari almaqa icaze verir.
+Bir classda istifade olunan kodlari diger classda istifade etmek olur.
+":" isaresinden istifade olunur.
+class Program
+    {
+        class Animal
+        {
+            public string name;
+            public int age;
+            public string color;
+
+            public void Print()
+            {
+                Console.WriteLine("Name :" + name);
+                Console.WriteLine("Age :" + age);
+                Console.WriteLine("Color :" + color);
+            }
+        }
+        class Dog : Animal
+        {
+            public void bark()
+            {
+                Console.WriteLine("Wovf!");
+            }
+        }
+        class Cat : Animal
+        {
+            public void meow()
+            {
+                Console.WriteLine("Meow?");
+            }
+
+8.
+Property-ler xususiyyetleri classlar-structurlar ve interfacelerdir.
+Proerty sahenin (Field) uzadilmasi ve eyni sintaksisden istifade olunmasidir.
+sahelerin deyerlerini oxumaq,yazmaq,manipulasiya etmek ucun istifade edilir.
+
+variable - yaddasda saxlama yerine verilen ad. deyisen demekdir.
+
+10.c#-la baqli arasdirmalar apardim ve bezi cetinlik cekdiyim dersleri
+tekrarladim.
